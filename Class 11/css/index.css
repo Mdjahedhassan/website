@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+ul,
+ol {
+
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.head {
+    height: 30px;
+    background-color: #0872B9
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+.clr {
+    clear: both;
+}
+
+.headertext {
+    font-size: 12px;
+    color: azure;
+    width: 50%;
+    float: left;
+}
+
+.headertext h2 {
+    margin-top: 4px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.headericon {
+    margin-top: 7px;
+    width: 50%;
+    float: left;
+}
+
+.headericon i{
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.icone {
+ 
+    text-align: end;
+}
+
+
+/*---=================================loder end==============================---*/
+#loading {
+    width: 100%;
+    height: 100vh;
+    background: #010338 url(../img/preloader.gif);
+    position: fixed;
+    z-index: 999;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*---=================================loder end==============================---*/
+/*---=================================header end==============================---*/
+.logo {
+    height: 65px;
+    width: 20%;
+    float: left;
+    margin-top: 16px;
+}
+
+#nav {
+    color: #353535;
+    height: 80px;
+}
+
+.menu ul {
+    float: right;
+    font-family: 'Dosis', sans-serif;
+}
+
+.menu {
+    width: 80%;
+    float: left;
+}
+
+.menu ul li a {
+    color: rgb(0, 0, 0);
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.menu ul li a:hover {
+    color: #c2c2c2;
+}
+
+.menu ul li {
+
+    float: left;
+    line-height: 80px;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-left: 27px;
+}
+
+
+
+
+
+/*---=================================menu end==============================---*/
+#banner {
+    height: 487px;
+    background: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    font-family: 'Oswald', sans-serif;
+}
+
+#banner::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.445);
+    z-index: -1;
+}
+
+.bannertext {
+    color: #353535;
+    z-index: 99;
+    padding: 130px 0px;
+    text-align: right;
+    color: rgb(255, 255, 255);
+}
+
+.bannertext h2 {
+    letter-spacing: 2px;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.bannertext h1 {
+    letter-spacing: 3px;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.bannertext p {
+    margin-right: 0px;
+    margin-left: 700px;
+    margin-bottom: 13px;
+}
+
+.bannerbtn {
+    font-family: 'Oswald', sans-serif;
+
+    margin-top: 15px;
+}
+
+.bannerbtn .bannerbtn1 {
+    padding: 10px 20px;
+    background: #0872b9;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    transition: .3s
+}
+
+.bannerbtn .bannerbtn2 {
+    padding: 10px 20px;
+    background: transparent;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 3px;
+    border: 2px solid #fff;
+    transition: .3s;
+}
+
+.bannerbtn .bannerbtn1:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.bannerbtn .bannerbtn2:hover {
+    background-color: #0872b9;
+    border: 2px solid transparent;
+}
+
+/*---================================= banner end==============================---*/
+.abouttext {
+    color: #353535;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin-top: 48px;
+    text-align: center;
+}
+
+.abouttext img {
+    margin-top: -43px;
+    vertical-align: middle;
+    margin-left: -123px;
+}
+
+.aboutimgandtext {
+    display: flex;
+}
+
+.abouttext1 {
+    font-family: 'Oswald', sans-serif;
+    padding: 40px 60px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+
+/*---=================================about end==============================---*/
+/*---=================================Service end==============================---*/
+.Servicetext {
+    font-family: 'Oswald', sans-serif;
+    color: #353535;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin-top: 48px;
+    text-align: center;
+}
+
+.Servicetext img {
+    margin-top: -43px;
+    vertical-align: middle;
+    margin-left: -160px;
+}
+
+.servicebox {
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+.serviceicone img {
+    transition: 1s;
+    z-index: 99;
+    height: 35px;
+    width: 35px;
+    border: 4px solid white;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 20px 20px;
+    background-color: #ded9d9;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.serviceitem {
+    font-family: 'Oswald', sans-serif;
+    background-color: #ded9d9ad;
+    padding: 0px 51px;
+    margin-left: 25px;
+    position: relative;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.serviceitem h2 {
+    letter-spacing: 1px;
+    margin-top: 49px;
+    margin-bottom: 20px;
+}
+
+.serviceicone::after {
+    top: 0;
+    position: absolute;
+    content: '';
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    border: 4px solid #e2dddd;
+    transform: translate(-50%, -50%);
+}
+
+.serviceicone::before {
+    top: 0;
+    position: absolute;
+    content: '';
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    border: 6px solid #ffffff;
+    transform: translate(-50%, -50%);
+}
+
+.serviceitem p {
+    margin-bottom: 43px;
+}
+
+.serviceitem:hover {
+    box-shadow: -1px 7px 17px 1px #8e8e8e;
+}
+
+.serviceicone img:hover {
+    background-color: #5bc5f4;
+
+}
+.backtop{
+    
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    float: right;
+}
+.backtop i {
+    z-index: 99;
+    border: 4px solid #6b6358;
+    bottom: 45px;
+    right: 35px;
+    cursor: pointer;
+    line-height: 49px;
+    background-color: bisque;
+    color: black;
+    height: 50px;
+    width: 50px;
+    float: right;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 6px #8e8e8e;
+    position: fixed;
+
+}
+
+/*---=================================Service ==============================---*/
+/*---=================================Portfolio ==============================---*/
+
+.portfoliotext {
+    color: #353535;
+    font-size: 30px;
+    margin-top: 48px;
+    text-align: center;
+}
+
+.portfoliotext img {
+    margin-top: -30px;
+    vertical-align: middle;
+    margin-left: -190px
+}
+
+.main-port {
+    margin-top: 40px;
+}
+
+.portfolio-item {
+    width: 25%;
+    float: left;
+}
+
+.portfolio-img {
+    margin-right: 23px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+}
+
+.port-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    transform: scale(0);
+    transition: .5s;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+
+.portfolio-img:hover .port-overlay {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+
+.port-overlay a {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    background: #5bc5f4;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    line-height: 60px;
+    transform: translate(-50%, -50%);
+
+}
+.main-port {
+    margin-left: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x:auto;
+    scroll-snap-type: x mandatory;  
+  }
+  .portfolio-item {
+    flex-shrink: 0;
+    height: 100%;
+  }
+/*---=================================team ==============================---*/
+.teamtext {
+    color: #353535;
+    font-size: 30px;
+    margin-top: 48px;
+    text-align: center;
+}
+
+.teamtext img {
+    margin-top: -45px;
+    vertical-align: middle;
+    margin-left: -121px;
+}
+#team .team-items {
+    margin-top: 40px;
+}
+
+
+#team .team-member{
+    width: 21%;
+    float: left;
+    background: #F1F1F1;
+    margin: 0 23px;
+    padding-top: 17px;
+    text-align: center;
+    position: relative;
+}
+
+.team-img img {
+    margin-bottom: -3px;
+}
+
+#team .team-member .team-overly {
+    border-radius: 10px 10px;
+    position: absolute;
+    top: 0%;
+    left: 71%;
+    height: 0%;
+    width: 28%;
+    background-color: #00000093;
+    transition: 0.5s;
+}
+
+#team .team-member:hover .team-overly {
+    height: 85%;
+}
+
+
+#team .team-member .team-overly a {
+    
+    font-size: 22px;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    display: block;
+    border-radius: 50%;
+    line-height: 45px;
+    color: #fff;
+    margin-top: 15px;
+    border: 2px solid #fff;
+    margin-left: 10px;
+    opacity: 0;
+    transition: .5s;
+}
+
+#team .team-member:hover .team-overly a{
+    opacity: 1;
+}
+
+#team .team-member .team-overly a:hover {
+    background: #158ddd;
+    border: 2px solid transparent;
+}
+
+
+#team .team-member .team-info {
+    background: #fff;
+}
+
+#team .team-member .team-info:hover h3 {
+    color: #158ddd;
+}
+/*---=================================about==============================---*/
+/*---=================================about ==============================---*/
+/*---=================================about ==============================---*/
+/*---=================================about==============================---*/
+/*---=================================about==============================---*/
